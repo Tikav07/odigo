@@ -1,0 +1,453 @@
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Lato";
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0e1d28;
+  align-items: center;
+  z-index: 10;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::after {
+  display: block;
+  content: "";
+  width: 253px;
+  height: 4px;
+  background-color: #006dfe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header-wrapper {
+  padding-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-item {
+  margin-right: 82px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-link:hover {
+  color: #1b7dff;
+  transition: 0.6s ease;
+}
+.intro {
+  background-image: url(./images/Hero.png);
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 263px;
+}
+.intro-title {
+  max-width: 619px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 22px;
+}
+.intro-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+.search-form-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-form-field {
+  width: 297px;
+  background: url(./images/Oval.png) no-repeat left 6px;
+  background-color: transparent;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 3px solid rgba(191, 192, 197, 1);
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.search-form-field::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.search-form-submit {
+  background-color: #1b7dff;
+  padding: 15px 39px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  border: 0;
+}
+.search-form-submit:hover,
+.search-form-submit:focus,
+.search-form-submit:active {
+  background: #0248a5;
+  transition: 0.4s;
+}
+.benefits {
+  margin-bottom: 122px;
+}
+.benefits-title {
+  margin-top: 93px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  margin-bottom: 120px;
+}
+.benefits-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 55px;
+}
+.benefit-card {
+}
+.benefits-card-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 37px;
+  margin-bottom: 26px;
+}
+.benefits-card-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.benefits-card-more {
+  text-decoration: none;
+  color: #1b7dff;
+  margin-bottom: 112px;
+}
+.benefits-card-img {
+}
+.benefits-card-more:hover {
+}
+.places {
+  margin-bottom: 100px;
+}
+.places-title {
+  margin-right: 15px;
+}
+.places-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.places-view-all {
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  background: url(./images/Shape.png) no-repeat 100% center;
+  padding-right: 59px;
+}
+.places-view-all:hover {
+  opacity: 65%;
+}
+.places-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places-card {
+  position: relative;
+  overflow: hidden;
+}
+.places-card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.places-card-size-lg {
+  grid-column: span 3;
+}
+.places-card-pic {
+  width: 100%;
+
+  transition: 0.15s;
+}
+
+.places-card-title {
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+}
+.places-card:hover .places-card-pic {
+  transform: scale(1.05);
+}
+.places-card-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.places-card-size-lg {
+  height: 354px;
+  object-fit: cover;
+}
+.places-card-size-sm {
+  grid-column: span 2;
+}
+.places-card-size-sm {
+  height: 283px;
+  object-fit: coverf;
+}
+.tours {
+  margin-bottom: 139px;
+}
+.tour-info {
+  padding-left: 47px;
+}
+
+.tours-tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+.tour-pic {
+  width: 597px;
+  height: 354px;
+}
+
+.tours-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102746;
+  margin-bottom: 35px;
+}
+.tour-desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  margin-bottom: 28px;
+}
+.tour-link {
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  background: url(./images/Shape.png) no-repeat 100% center;
+  padding-right: 59px;
+}
+.tour-link:hover {
+  opacity: 65%;
+}
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+.top-card {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  margin-bottom: 87px;
+}
+.top-title {
+  margin-bottom: 54px;
+}
+.top-card-stats {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, 0.6);
+  padding: 12px 0;
+}
+.top-card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+.top-card-title {
+  color: #fff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.top-card-likes {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 20px;
+  background: url(./images/heart.png) no-repeat right;
+}
+.top-card-comments {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 23px;
+  background: url(./images/comment.png) no-repeat right;
+}
+.top-card-desc {
+  margin-bottom: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+}
+.top-card-more {
+  text-decoration: none;
+  color: #fff;
+  background-color: #006dfe;
+  padding: 12px 19px;
+  align-items: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 80px;
+  margin: auto 0 0 0;
+}
+.top-card-more:hover {
+  background-color: #0248a5;
+  transition: 0.4s ease;
+}
+.videos {
+  width: 100%;
+}
+.videos-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video-item {
+  padding-top: 56.25%;
+}
+.video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  background: #102746;
+  padding: 119px 0;
+}
+.footer-item {
+  display: flex;
+  font-weight: wrap;
+  align-items: center;
+}
+.footer-logo {
+  width: 50%;
+}
+.footer-nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.footer-menu-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer-menu-link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
